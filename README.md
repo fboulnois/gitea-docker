@@ -6,7 +6,7 @@ Runs a minimal [Gitea](https://gitea.io) Docker deployment built on Debian 11.
 
 * Built on Debian 11 for portability
 * Uses a non-root user for security
-* Only includes `git` and `gitea` in the running container
+* Only runs `git` and `gitea` in the container
 * Simple `Dockerfile` and `docker-compose.yml` files
 * One step deployment that creates a valid server on localhost
 
