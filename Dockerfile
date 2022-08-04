@@ -30,7 +30,7 @@ COPY --from=env-build /srv/gitea /usr/local/bin/gitea
 # install prerequisites
 RUN set -x \
   && apt-get update \
-  && apt-get install -y git
+  && apt-get install -y git git-lfs
 
 # add gitea environment variable
 ENV GITEA_WORK_DIR=/home/git
