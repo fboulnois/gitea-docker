@@ -3,8 +3,8 @@ services:
   gitea:
     image: gitea-docker
     volumes:
-      - gitea-data:/home/git
+      - data:/home/git
     ports:
       - 3000:3000/tcp
 volumes:
-  gitea-data:
+  data:
