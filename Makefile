@@ -19,8 +19,8 @@ clean:
 purge: clean
 	$(DOCKER) volume prune -f
 
-deploy:
-	$(DOCKER) stack deploy -c docker-compose.yml $(DIRNAME)
+up:
+	$(DOCKER) compose up -d
 
-rm:
-	$(DOCKER) stack rm $(DIRNAME)
+down:
+	$(DOCKER) compose down
