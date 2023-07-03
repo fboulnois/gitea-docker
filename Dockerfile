@@ -1,4 +1,4 @@
-FROM debian:11-slim AS env-build
+FROM debian:12-slim AS env-build
 
 # install build prerequisites
 RUN set -x \
@@ -22,7 +22,7 @@ RUN curl -LO ${GITEA_DOWNLOAD}/v${GITEA_VERSION}/gitea-${GITEA_VERSION}-linux-am
   && chmod +x gitea-${GITEA_VERSION}-linux-amd64 \
   && cp gitea-${GITEA_VERSION}-linux-amd64 gitea
 
-FROM debian:11-slim AS env-deploy
+FROM debian:12-slim AS env-deploy
 
 # import gitea from build container
 COPY --from=env-build /srv/gitea /usr/local/bin/gitea
