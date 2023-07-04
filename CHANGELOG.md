@@ -1,5 +1,16 @@
 # Changelog
 
+## [v1.0.3](https://github.com/fboulnois/gitea-docker/compare/v1.0.2...v1.0.3) - 2023-07-04
+
+### Added
+
+* Update gitea to 1.19.4
+* Switch to debian 12
+
+### Changed
+
+* Use docker compose instead of swarm
+
 ## [v1.0.2](https://github.com/fboulnois/gitea-docker/compare/v1.0.1...v1.0.2) - 2022-09-23
 
 ### Changed
