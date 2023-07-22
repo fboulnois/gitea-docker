@@ -9,7 +9,7 @@ RUN set -x \
 WORKDIR /srv
 
 # gitea build time args
-ARG GITEA_VERSION=1.19.4 \
+ARG GITEA_VERSION=1.20.0 \
   GITEA_DOWNLOAD=https://github.com/go-gitea/gitea/releases/download \
   GITEA_GPG_RECV=7C9E68152594688862D62AF62D9AE806EC1592E2
 
