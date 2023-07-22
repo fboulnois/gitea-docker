@@ -1,5 +1,11 @@
 # Changelog
 
+## [v1.0.4](https://github.com/fboulnois/gitea-docker/compare/v1.0.3...v1.0.4) - 2023-07-21
+
+### Added
+
+* Update gitea to 1.20.0
+
 ## [v1.0.3](https://github.com/fboulnois/gitea-docker/compare/v1.0.2...v1.0.3) - 2023-07-04
 
 ### Added
