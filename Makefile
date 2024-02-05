@@ -2,7 +2,7 @@ USE_SUDO := $(shell which docker >/dev/null && docker ps 2>&1 | grep -q "permiss
 DOCKER := $(if $(USE_SUDO), sudo docker, docker)
 DIRNAME := $(notdir $(CURDIR))
 
-.PHONY: build bootstrap clean purge deploy rm
+.PHONY: build bootstrap clean purge up down
 
 build:
 	$(DOCKER) build --target env-build  . --tag $(DIRNAME)-build
